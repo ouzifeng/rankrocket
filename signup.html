@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - RankRocket</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img
+            src="logo-placeholder.png"
+            alt="RankRocket Logo"
+            class="logo-img"
+          />
+          <span class="logo-text">RankRocket</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="features.html" class="nav-link">Features</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="login.html" class="nav-link btn-outline">Login</a></li>
+          <li>
+            <a href="signup.html" class="nav-link btn-primary active"
+              >Sign Up</a
+            >
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Signup Section -->
+    <section class="page-container">
+      <div class="form-container">
+        <div class="form-header">
+          <h1 class="form-title">Start Your Free Trial</h1>
+          <p class="form-subtitle">Create your RankRocket account in minutes</p>
+        </div>
+
+        <form class="signup-form" action="#" method="POST">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName" class="form-label">First Name</label>
+              <input
+                type="text"
+                id="firstName"
+                name="firstName"
+                class="form-input"
+                placeholder="John"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="lastName" class="form-label">Last Name</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                class="form-input"
+                placeholder="Doe"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="form-input"
+              placeholder="john@company.com"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="company" class="form-label"
+              >Company Name (Optional)</label
+            >
+            <input
+              type="text"
+              id="company"
+              name="company"
+              class="form-input"
+              placeholder="Your Company"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              class="form-input"
+              placeholder="Create a strong password"
+              required
+            />
+            <div class="password-requirements">
+              <p>Password must contain:</p>
+              <ul>
+                <li>At least 8 characters</li>
+                <li>One uppercase letter</li>
+                <li>One lowercase letter</li>
+                <li>One number</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword" class="form-label"
+              >Confirm Password</label
+            >
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              class="form-input"
+              placeholder="Confirm your password"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="plan" class="form-label">Choose Your Plan</label>
+            <select id="plan" name="plan" class="form-input" required>
+              <option value="">Select a plan</option>
+              <option value="starter">Starter - $29/month</option>
+              <option value="professional" selected>
+                Professional - $79/month (Most Popular)
+              </option>
+              <option value="enterprise">Enterprise - $199/month</option>
+            </select>
+          </div>
+
+          <div class="form-checkbox">
+            <label class="checkbox-label">
+              <input type="checkbox" name="terms" class="checkbox" required />
+              <span class="checkmark"></span>
+              I agree to the
+              <a href="#" target="_blank">Terms of Service</a> and
+              <a href="#" target="_blank">Privacy Policy</a>
+            </label>
+          </div>
+
+          <div class="form-checkbox">
+            <label class="checkbox-label">
+              <input type="checkbox" name="newsletter" class="checkbox" />
+              <span class="checkmark"></span>
+              Send me product updates and SEO tips (optional)
+            </label>
+          </div>
+
+          <button type="submit" class="form-button">Start Free Trial</button>
+
+          <div class="trial-note">
+            <p>
+              <i class="fas fa-check-circle"></i> 14-day free trial • No credit
+              card required
+            </p>
+          </div>
+
+          <div class="divider">
+            <span>or</span>
+          </div>
+
+          <div class="social-login">
+            <button type="button" class="social-btn google-btn">
+              <i class="fab fa-google"></i>
+              Sign up with Google
+            </button>
+            <button type="button" class="social-btn microsoft-btn">
+              <i class="fab fa-microsoft"></i>
+              Sign up with Microsoft
+            </button>
+          </div>
+        </form>
+
+        <div class="form-footer">
+          <p>Already have an account? <a href="login.html">Sign in here</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img
+                src="logo-placeholder.png"
+                alt="RankRocket Logo"
+                class="logo-img"
+              />
+              <span class="logo-text">RankRocket</span>
+            </div>
+            <p class="footer-description">
+              SEO insights in one click. Analyze, optimize, and dominate search
+              rankings.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-title">Product</h4>
+            <ul class="footer-links">
+              <li><a href="features.html">Features</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-title">Company</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-title">Support</h4>
+            <ul class="footer-links">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 RankRocket. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

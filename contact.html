@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - RankRocket</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <img
+            src="logo-placeholder.png"
+            alt="RankRocket Logo"
+            class="logo-img"
+          />
+          <span class="logo-text">RankRocket</span>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="features.html" class="nav-link">Features</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link active">Contact</a></li>
+          <li><a href="login.html" class="nav-link btn-outline">Login</a></li>
+          <li>
+            <a href="signup.html" class="nav-link btn-primary">Sign Up</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1 class="page-title">Get in Touch</h1>
+        <p class="page-description">
+          Have questions? We'd love to hear from you. Send us a message and
+          we'll respond as soon as possible.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="page-content">
+      <div class="container">
+        <div class="contact-layout">
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <h2 class="section-title">Contact Information</h2>
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Email</h4>
+                  <p>hello@rankrocket.com</p>
+                  <p>support@rankrocket.com</p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Phone</h4>
+                  <p>+1 (555) 123-4567</p>
+                  <p>Mon-Fri 9AM-5PM PST</p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Address</h4>
+                  <p>123 Innovation Drive</p>
+                  <p>San Francisco, CA 94105</p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="contact-icon">
+                  <i class="fas fa-comments"></i>
+                </div>
+                <div class="contact-details">
+                  <h4>Live Chat</h4>
+                  <p>Available 24/7</p>
+                  <p>Click the chat bubble</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-contact">
+              <h4>Follow Us</h4>
+              <div class="social-links">
+                <a href="#" class="social-link"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="#" class="social-link"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form-section">
+            <div class="form-container">
+              <div class="form-header">
+                <h2 class="form-title">Send us a Message</h2>
+                <p class="form-subtitle">
+                  We'll get back to you within 24 hours
+                </p>
+              </div>
+
+              <form class="contact-form" action="#" method="POST">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input
+                      type="text"
+                      id="lastName"
+                      name="lastName"
+                      class="form-input"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="company" class="form-label"
+                    >Company (Optional)</label
+                  >
+                  <input
+                    type="text"
+                    id="company"
+                    name="company"
+                    class="form-input"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="subject" class="form-label">Subject</label>
+                  <select
+                    id="subject"
+                    name="subject"
+                    class="form-input"
+                    required
+                  >
+                    <option value="">Select a subject</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="sales">Sales Question</option>
+                    <option value="partnership">Partnership</option>
+                    <option value="feedback">Product Feedback</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="form-textarea"
+                    rows="6"
+                    placeholder="Tell us how we can help..."
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="form-button">Send Message</button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="section-header" style="margin-top: 80px">
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-description">Quick answers to common questions</p>
+        </div>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h4 class="faq-question">
+              How quickly do you respond to support requests?
+            </h4>
+            <p class="faq-answer">
+              We typically respond to all support requests within 24 hours.
+              Priority support customers receive responses within 4 hours during
+              business hours.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4 class="faq-question">Do you offer phone support?</h4>
+            <p class="faq-answer">
+              Yes! Phone support is available for Professional and Enterprise
+              customers. Starter plan users can access our comprehensive help
+              center and email support.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4 class="faq-question">Can I schedule a demo?</h4>
+            <p class="faq-answer">
+              Absolutely! Contact our sales team to schedule a personalized demo
+              of RankRocket's features and capabilities.
+            </p>
+          </div>
+          <div class="faq-item">
+            <h4 class="faq-question">Do you offer training and onboarding?</h4>
+            <p class="faq-answer">
+              Yes, we provide comprehensive onboarding for all new customers,
+              plus advanced training sessions for Enterprise clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <img
+                src="logo-placeholder.png"
+                alt="RankRocket Logo"
+                class="logo-img"
+              />
+              <span class="logo-text">RankRocket</span>
+            </div>
+            <p class="footer-description">
+              SEO insights in one click. Analyze, optimize, and dominate search
+              rankings.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-facebook"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a href="#" class="social-link"
+                ><i class="fab fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-title">Product</h4>
+            <ul class="footer-links">
+              <li><a href="features.html">Features</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">Integrations</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-title">Company</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4 class="footer-title">Support</h4>
+            <ul class="footer-links">
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 RankRocket. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
